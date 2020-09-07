@@ -138,7 +138,7 @@ h2:after {
     font-size: 120%;
     
     /* adjusts y-axis position of icons relative to text */
-    /* secrets to align text and icons */
+    /* secrets to aligning text and icons */
     line-height: 120%;
     vertical-align: middle;
     margin-top: -5px;

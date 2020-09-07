@@ -28,6 +28,12 @@
     .works-step:last-of-type { margin-bottom: 60px; }
     
     .app-screen { width: 50%; }
+    
+    .icon-small { 
+        width: 17px; 
+        margin-right: 10px;
+    }
+    .city-feature { font-size: 90%; }
 }
 
 
