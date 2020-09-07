@@ -331,15 +331,15 @@ header {
 /* HOW IT WORKS */
 /*-------------------------------------------------*/
 
-.section-steps {
-    background-color: #f4f4f4;
-}
+.section-steps { background-color: #f4f4f4; }
+
+.steps-box { margin-top: 30px; }
 
 /* note: first-child and last-child pseudo classes refer to first and last instances of elements with declared class of "steps-box" */
 .steps-box:first-child {
     text-align: right;
     padding-right: 3%;
-    margin-top: 30px;
+/*    margin-top: 30px;*/
 }
 
 .steps-box:last-child {
@@ -347,17 +347,11 @@ header {
     margin-top: 70px;
 }
 
-.app-screen {
-    width: 40%;
-}
+.app-screen { width: 40%; }
 
-.works-step {
-    margin-bottom: 50px;
-}
+.works-step { margin-bottom: 50px; }
 
-.works-step:last-of-type {
-    margin-bottom: 80px;
-}
+.works-step:last-of-type { margin-bottom: 80px; }
 
 .works-step div {
     color: #e67e22;
