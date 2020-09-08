@@ -15,7 +15,8 @@
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
     /*note that below color, white, is default*/
     background-color: #fff;
     /*below sets text color*/
@@ -25,6 +26,9 @@ html {
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    
+    /* when screen width is reduced, below keeps text from creating white space for overflow of smooshed text */
+    overflow-x: hidden;
 }
 
 /* for 'clearing floats'; fixes padding issue of section-step h2 element; all this has to do with giving the floated images height */
