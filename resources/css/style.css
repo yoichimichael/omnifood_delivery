@@ -299,6 +299,9 @@ header {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.96);
     box-shadow: 0 2px 2px #efefef;
+    
+/* makes sure nav is on top of all other elements */
+    z-index: 9999;
 }
 
 .sticky .main-nav { margin-top: 18px}
