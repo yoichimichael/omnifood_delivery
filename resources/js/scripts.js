@@ -193,8 +193,19 @@ $(document).ready(function() {
     
     // mobile navigation
     
+    // menu options view/hide animation when menu icon is clicked
     $('.js--nav-icon').click(function() {
-       var nav = $('.js--main-nav') 
+       var nav = $('.js--main-nav');
+       var icon = $('.js--nav-icon')
+        
+       nav.slideToggle(200);
+        
+    // toggles between menu icon and x icon by changing name attribute 
+       if (icon.attr('name') === 'menu-outline') {
+           icon.attr('name', 'close-outline')
+       } else {
+           icon.attr('name', 'menu-outline')
+       }
     });
 });
 
