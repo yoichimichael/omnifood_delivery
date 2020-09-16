@@ -305,6 +305,7 @@ header {
 }
 
 /* sticky navi */
+/* note: sticky class is added by jQuery */
 
 .sticky {
     position: fixed;

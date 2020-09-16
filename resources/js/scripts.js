@@ -189,7 +189,13 @@ $(document).ready(function() {
         $('.js--wp-4').addClass('animate__animated animate__pulse');
     }, {
         offset: '50%'
-    })
+    });
+    
+    // mobile navigation
+    
+    $('.js--nav-icon').click(function() {
+       var nav = $('.js--main-nav') 
+    });
 });
 
 //    var waypoints = $('#handler-first').waypoint(function(direction) {
@@ -216,6 +222,7 @@ $(document).ready(function() {
 //        $(this).hide();
 //    })
 //}) 
+
 
 
 
