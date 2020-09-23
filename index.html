@@ -397,10 +397,36 @@
                 </div>
             </div>
         </section>
-        <section class="section-form">
+
+        <!-- id added for php functionality; currently does nothing -->
+        <section class="section-form" id="form">
             <div class="row">
                 <h2>We're happy to hear from you</h2>
             </div>
+
+            <!-- below are success and error messages for php funtioning -->
+            <div class="row">
+              <div class="form-messages success">
+                Thank you! Your message has been sent.
+              </div>
+              <div class="form-messages error">
+                Opps! Something went wrong. Please try again.
+              </div>          
+            </div>
+
+            <!-- php code for when hosted somewhere -->
+            need to change file to .php if it contains php code
+
+            <!-- <?php
+              if($_GET['success'] == 1) {
+                echo "<div class=\"form-messages success\">Thank you! Your message has been sent.</div>";
+              }
+              if($_GET['error'] == 1) {
+                echo "<div class=\"form-messages error\">Opps! Something went wrong. Please try again.</div>";
+              }
+            ?> -->
+            
+
             <div class="row">
 
               <!-- submit action will run script in mailer.php file  -->

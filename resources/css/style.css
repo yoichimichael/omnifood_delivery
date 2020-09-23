@@ -597,8 +597,27 @@ input[type=checkbox] {
     outline: none;
 }
 
+/* form styles below are for php functionality */
+
+.form-messages {
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+
+  /* display none because currently not functioning */
+  display: none;
+}
+
+.success { background-color: rgba(22, 167, 17, 0.698);}
+
+.error { background-color: rgba(221, 43, 11, 0.746);}
+
 /*-------------------------------------------------*/
-/* FORM */
+/* FOOTER */
 /*-------------------------------------------------*/
 
 footer {
