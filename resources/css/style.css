@@ -12,10 +12,19 @@
 * {
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     box-sizing: border-box;
 }
 
 html {
+=======
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+>>>>>>> 116e7973036f764fbfc7958adc6c8886fea8c4b4
     /*note that below color, white, is default*/
     background-color: #fff;
     /*below sets text color*/
@@ -25,6 +34,12 @@ html {
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+<<<<<<< HEAD
+=======
+    
+    /* when screen width is reduced, below keeps text from creating white space for overflow of smooshed text */
+    overflow-x: hidden;
+>>>>>>> 116e7973036f764fbfc7958adc6c8886fea8c4b4
 }
 
 /* for 'clearing floats'; fixes padding issue of section-step h2 element; all this has to do with giving the floated images height */
@@ -138,7 +153,11 @@ h2:after {
     font-size: 120%;
     
     /* adjusts y-axis position of icons relative to text */
+<<<<<<< HEAD
     /* secrets to align text and icons */
+=======
+    /* secrets to aligning text and icons */
+>>>>>>> 116e7973036f764fbfc7958adc6c8886fea8c4b4
     line-height: 120%;
     vertical-align: middle;
     margin-top: -5px;
@@ -153,6 +172,10 @@ a:visited {
     text-decoration: none;
     padding-bottom: 1px;
     border-bottom: 1px solid #e67e22;
+<<<<<<< HEAD
+=======
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+>>>>>>> 116e7973036f764fbfc7958adc6c8886fea8c4b4
     transition: border-bottom 0.2s, color 0.2s;
 }
 
@@ -176,6 +199,10 @@ input[type=submit] {
     border-radius: 200px;
     
     /* animates transition from link/visited to hover/active */
+<<<<<<< HEAD
+=======
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+>>>>>>> 116e7973036f764fbfc7958adc6c8886fea8c4b4
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
@@ -212,7 +239,12 @@ input[type=submit]:active {
 /*-------------------------------------------------*/
 
 header {
+<<<<<<< HEAD
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+=======
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/hero-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-min.jpg);
+>>>>>>> 116e7973036f764fbfc7958adc6c8886fea8c4b4
     background-size: cover;
     background-position: center;
     
@@ -229,6 +261,10 @@ header {
     
     /* pushes element half of its height up and half of its width to the left*/
     /* without below, 'centered' part of element would be the top-left corner */
+<<<<<<< HEAD
+=======
+    -webkit-transform: translate(-50%,-50%);
+>>>>>>> 116e7973036f764fbfc7958adc6c8886fea8c4b4
     transform: translate(-50%,-50%)
 }
 
@@ -237,8 +273,22 @@ header {
     width: auto;
     float: left;
     margin-top: 20px;
+<<<<<<< HEAD
 }
 
+=======
+} 
+
+.logo-black { 
+    display: none; 
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
+
+/* main navi */
+>>>>>>> 116e7973036f764fbfc7958adc6c8886fea8c4b4
 .main-nav {
     float: right;
     
@@ -264,15 +314,64 @@ header {
     text-transform: uppercase;
     font-size: 90%;
     border-bottom: 2px solid transparent;
+<<<<<<< HEAD
+=======
+    -webkit-transition: border-bottom 0.2s;
+>>>>>>> 116e7973036f764fbfc7958adc6c8886fea8c4b4
     transition: border-bottom 0.2s; 
 }
 
 
 .main-nav li a:hover, 
+<<<<<<< HEAD
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
 }
 
+=======
+.main-nav li a:active { border-bottom: 2px solid #e67e22; }
+
+/* mobile navi */
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon ion-icon {
+    font-size: 200%;
+    color: #fff;
+}
+
+/* sticky navi */
+/* note: sticky class is added by jQuery */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 2px 2px #efefef;
+    
+/* makes sure nav is on top of all other elements */
+    z-index: 9999;
+}
+
+.sticky .main-nav { margin-top: 18px}
+
+.sticky .main-nav li a:link, 
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: #555;
+}
+
+.sticky .logo-black { display: block; }
+.sticky .logo { display: none; }
+
+>>>>>>> 116e7973036f764fbfc7958adc6c8886fea8c4b4
 /*-------------------------------------------------*/
 /* FEATURES */
 /*-------------------------------------------------*/
@@ -318,11 +417,24 @@ header {
     
     width: 100%;
     height: auto;
+<<<<<<< HEAD
     transform: scale(1.15);
     transition: transform 0.5s, opacity 0.5s;
 }
 
 .meal-photo img:hover {
+=======
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.meal-photo img:hover {
+    -webkit-transform: scale(1.03);
+>>>>>>> 116e7973036f764fbfc7958adc6c8886fea8c4b4
     transform: scale(1.03);
     opacity: 1;
 }
@@ -331,15 +443,25 @@ header {
 /* HOW IT WORKS */
 /*-------------------------------------------------*/
 
+<<<<<<< HEAD
 .section-steps {
     background-color: #f4f4f4;
 }
+=======
+.section-steps { background-color: #f4f4f4; }
+
+.steps-box { margin-top: 30px; }
+>>>>>>> 116e7973036f764fbfc7958adc6c8886fea8c4b4
 
 /* note: first-child and last-child pseudo classes refer to first and last instances of elements with declared class of "steps-box" */
 .steps-box:first-child {
     text-align: right;
     padding-right: 3%;
+<<<<<<< HEAD
     margin-top: 30px;
+=======
+/*    margin-top: 30px;*/
+>>>>>>> 116e7973036f764fbfc7958adc6c8886fea8c4b4
 }
 
 .steps-box:last-child {
@@ -347,6 +469,7 @@ header {
     margin-top: 70px;
 }
 
+<<<<<<< HEAD
 .app-screen {
     width: 40%;
 }
@@ -358,6 +481,13 @@ header {
 .works-step:last-of-type {
     margin-bottom: 80px;
 }
+=======
+.app-screen { width: 40%; }
+
+.works-step { margin-bottom: 50px; }
+
+.works-step:last-of-type { margin-bottom: 80px; }
+>>>>>>> 116e7973036f764fbfc7958adc6c8886fea8c4b4
 
 .works-step div {
     color: #e67e22;
@@ -404,7 +534,12 @@ header {
 /*-------------------------------------------------*/
 
 .section-testimonials {
+<<<<<<< HEAD
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+=======
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(img/back-customers-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers-min.jpg);
+>>>>>>> 116e7973036f764fbfc7958adc6c8886fea8c4b4
     background-size: cover;
     color: #fff;
     
@@ -465,6 +600,10 @@ cite img {
     
     /* centers box within column; if width of box is 90% of col, then each side should be 5% */
     margin-left: 5%;
+<<<<<<< HEAD
+=======
+    -webkit-box-shadow: 0 2px 2px #efefef;
+>>>>>>> 116e7973036f764fbfc7958adc6c8886fea8c4b4
     box-shadow: 0 2px 2px #efefef;
 }
 
@@ -513,7 +652,11 @@ cite img {
 }
 
 /*-------------------------------------------------*/
+<<<<<<< HEAD
 /* CONTACT FORM */
+=======
+/* FORM */
+>>>>>>> 116e7973036f764fbfc7958adc6c8886fea8c4b4
 /*-------------------------------------------------*/
 
 .contact-form {
@@ -537,4 +680,114 @@ input[type=checkbox] {
 
 *:focus {
     outline: none;
+<<<<<<< HEAD
 }
+=======
+}
+
+/*-------------------------------------------------*/
+/* FORM */
+/*-------------------------------------------------*/
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    /* makes li elements dispay next to each; doesn't force a line break */
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-links li:last-child {
+    margin-right: 0px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: none;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+ion-icon[name="logo-facebook"],
+ion-icon[name="logo-twitter"],
+ion-icon[name="logo-google"],
+ion-icon[name="logo-instagram"] {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+ion-icon[name="logo-facebook"]:hover {
+    color: #3b5998;
+}
+
+ion-icon[name="logo-twitter"]:hover {
+    color: #00aced;
+}
+
+ion-icon[name="logo-google"]:hover {
+    color: #dd4b39;
+}
+
+ion-icon[name="logo-instagram"]:hover {
+    color: #517fa4;
+}
+
+.social-links li a:hover,
+.social-links li a:active {
+    
+}
+
+footer p {
+    margin-top: 20px;
+    color: #888;
+    text-align: center;
+}
+
+/*-------------------------------------------------*/
+/* ANIMATIONS */
+/*-------------------------------------------------*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 { 
+    opacity: 0; 
+    animation-duration: 1s;
+}
+
+.js--wp-4 { animation-duration: 1s; }
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated { opacity: 1; }
+>>>>>>> 116e7973036f764fbfc7958adc6c8886fea8c4b4
