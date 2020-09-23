@@ -675,10 +675,10 @@ ion-icon[name="logo-instagram"]:hover {
     color: #517fa4;
 }
 
-.social-links li a:hover,
+/* .social-links li a:hover,
 .social-links li a:active {
     
-}
+} */
 
 footer p {
     margin-top: 20px;
